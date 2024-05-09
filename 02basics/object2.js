@@ -16,7 +16,7 @@ const regularUser = {
     }
 }
 
-console.log(regularUser.fullname?.userfullname.firstname)  // ?-> protection for api response 
+// console.log(regularUser.fullname?.userfullname.firstname)  // ?-> protection for api response 
 
 const obj1 = {1:"a",2:"b"}
 const obj2 = {3:"c",4:"d"}
@@ -25,7 +25,7 @@ const obj3 = Object.assign({},obj1,obj2)
 
 // const obj3 = {...obj1,...obj2}
 
-console.log(obj3)
+// console.log(obj3)
 
 const users=[
     {
@@ -44,11 +44,29 @@ const users=[
 
 users[1].email
 
-console.log(tinderUser)
-console.log(Object.keys(tinderUser))  //important , gives an array of keys
-console.log(Object.values(tinderUser))  // important  , gives an array of values
-console.log(Object.entries(tinderUser)) // array of arrays{key,value}
+// console.log(tinderUser)
+// console.log(Object.keys(tinderUser))  //important , gives an array of keys
+// console.log(Object.values(tinderUser))  // important  , gives an array of values
+// console.log(Object.entries(tinderUser)) // array of arrays{key,value}
 // [ [ 'id', '123abc' ], [ 'name', 'Saksham' ], [ 'isLoggedIn', false ] ]
 
-console.log(tinderUser.hasOwnProperty("isLoggedIn"))  // check for the property of object return boolean 
+// console.log(tinderUser.hasOwnProperty("isLoggedIn"))  // check for the property of object return boolean 
 
+
+const course = {
+    coursename:"js in hindi",
+    price:"999",
+    courseInstructor:"Hitesh Choudhary"
+}
+
+const {courseInstructor:instructor} = course
+
+console.log(instructor)
+
+//JSON
+
+// {
+//     "name":"hitesh",
+//     "coursename" : "js in hindi",
+//     "price":"free"
+// }
