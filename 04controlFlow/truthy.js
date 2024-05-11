@@ -31,4 +31,4 @@ console.log(val1)
 
 const iceTea = 100
 
-iceTea==100 ? console.log(`100 rs`) : c
+iceTea==100 ? console.log(`100 rs`) : console.log("not 100 rs")
